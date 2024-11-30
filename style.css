@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #6a11cb, #2575fc); /* Purple to Blue Gradient */
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container */
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s, opacity 0.3s;
+}
+/* 
+form:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+} */
+
+/* Heading */
+h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 1rem;
+    color: #f2f2f2;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button */
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(120deg, #a64af1, #6c63ff); /* Purple Gradient */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(120deg, #6c63ff, #a64af1); /* Reverse Gradient */
+    transform: translateY(-2px);
+}
+
+/* Result Box */
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
